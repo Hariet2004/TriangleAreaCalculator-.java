@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class TriangleAreaCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+ bn 
+        TriangleAreaCalculator calculator = new TriangleAreaCalculator;
+
+        
+        System.out.println("Enter a year:");
+        int year = scanner.nextInt();
+        if (calculator.isLeapYear(year)) {
+            System.out.println("The year you entered is a leap year.");
+        } else {
+            System.out.println("The year you entered is not a leap year.");
+        }
+
+       
+        calculator.calculateAndDisplayArea;
+    }
+
+    
+    public boolean isLeapYear(int year) {
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    }
+    public void getUserInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the base of the triangle:");
+        double base = scanner.nextDouble();
+
+        System.out.println("Enter the height of the triangle:");
+        double height = scanner.nextDouble();
+
+      
+        computeAndDisplayArea(base, height);
+    }
+
+   
+    public void computeAndDisplayArea(double base, double height) {
+     
+        double area = 0.5 * base * height;
+
+       
+        System.out.println("The area of the triangle is: " + area);
+    }
+}
